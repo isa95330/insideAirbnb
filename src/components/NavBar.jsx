@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaFacebook, FaTwitter } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 const NavBar = () => {
@@ -40,6 +40,7 @@ const NavBar = () => {
     <nav className="navbar">
       <div>
         <h1>A l'intérieur D'Airbnb</h1>
+        <h3>Ajouter des données aux débats</h3>
       </div>
 
       <ul className={nav ? "mobile-menu" : "desktop-menu"}>
@@ -50,6 +51,19 @@ const NavBar = () => {
             </Link>
           </li>
         ))}
+        <li>
+          <button className="donate-button">Faire un don</button>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/">
+            <FaFacebook />
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/">
+            <FaTwitter />
+          </a>
+        </li>
       </ul>
 
       <div onClick={toggleNav} className="toggle-button">

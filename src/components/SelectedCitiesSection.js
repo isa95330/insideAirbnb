@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import MapWithPoints from './MapWithPoints'; // Importez le composant de la carte avec les points
 
 const SelectedCitiesSection = () => {
   const cities = [
@@ -11,7 +12,6 @@ const SelectedCitiesSection = () => {
     { name: "Amsterdam", image: "http://insideairbnb.com/images/amsterdam_200px.png" }
   ];
 
-  // Séparer la liste des villes en deux parties
   const firstRow = cities.slice(0, 3);
   const secondRow = cities.slice(3);
 
@@ -40,7 +40,9 @@ const SelectedCitiesSection = () => {
           ))}
         </div>
       </div>
-      <Link to="/map">Voir la carte</Link> {/* Lien vers la page de la carte */}
+      {/* Ajoutez le composant de la carte avec les points rouges */}
+      <MapWithPoints />
+      <Link to="/map">Voir la carte</Link>
     </div>
   );
 };

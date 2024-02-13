@@ -7,11 +7,23 @@
   justify-content: space-between;
   align-items: center;
 }
-
+.navbar h1 {
+  margin: 0;
+  color: #09131e;
+  gap:1rem;
+}
+.navbar h3{
+  color: #09131e;
+  margin-top: 0.2rem;
+}
 .navbar a {
   color: #007bff;
   text-decoration: none;
-  margin-right: 20px;
+   list-style-type: none;
+
+}
+.navbar li{
+  list-style-type: none;
 }
 
 .navbar a:hover {
@@ -20,11 +32,19 @@
 
 .navbar ul {
   display: flex;
-  margin-right: 20px;
+  margin-right: 490px; /* Rapprocher les liens du titre */
 }
 
 .navbar li {
-  margin-right: 20px;
+  margin-right: 10px; /* Rapprocher les liens du titre */
+}
+
+.donate-button {
+  background-color: #004085; /* Couleur de fond bleu foncé */
+  color: #ffffff; /* Police blanche */
+  border: none;
+  border-radius: 5px; /* Petit border radius */
+  padding: 5px 10px;
 }
 
 .toggle-button {
@@ -51,12 +71,21 @@
 }
 
 
-
 .info-section {
-  background-color: #d4eaf7; /* Bleu clair */
+  background-color: #174259; /* Bleu clair */
   color: #333333; /* Gris foncé */
   padding: 20px;
+
+}
+.info-section h1{
   margin-left: 150px;
+  font-size: 30px;
+  color: #ffffff;
+}
+.info-section p{
+  margin-left: 150px;
+  font-size: 22px;
+  color: #ffffff;
 }
 
 
@@ -88,14 +117,14 @@
 
 .search-bar button {
   padding: 5px 10px;
-  background-color: #007bff;
+  background-color: #5281a4;
   color: #fff;
   border: none;
   cursor: pointer;
 }
 
 .search-bar button:hover {
-  background-color: #0056b3;
+  background-color: #5281a4;
 }
 
 a {
